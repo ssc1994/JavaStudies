@@ -5,6 +5,7 @@ import java.io.InputStreamReader;
 import java.io.PrintWriter;
 import java.net.ServerSocket;
 import java.net.Socket;
+import java.util.Scanner;
 
 public class TCPServer {
 	
@@ -31,7 +32,9 @@ public class TCPServer {
 					
 					//메시지를 보낼수 있는 스트림 생성
 					PrintWriter pw = new PrintWriter(socket.getOutputStream());
-					pw.println("서버가 보내는 메시지");
+					Scanner scan = new Scanner(System.in);
+					
+					pw.println(scan.nextLine());
 					pw.flush();
 					
 					//정리 작성

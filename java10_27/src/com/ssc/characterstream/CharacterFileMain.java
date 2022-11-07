@@ -22,9 +22,9 @@ public class CharacterFileMain {
 			//csv = Comma Seperated Value
 			//이 방식은 변하지 않는 고정적인 데이터를 기록할때 주로 이용함
 			
-			p.print("adam,사이버가수\n");
-			p.print("강진축구,온라인축구게임\n");
-			p.print("프리스톤테일,MMORPG \n");
+			p.print("adam,사이버가수,asdf\n");
+			p.print("강진축구,온라인축구게임,asdf\n");
+			p.print("프리스톤테일,MMORPG,asdf \n");
 			
 			//버퍼의 내용을 전부 출력
 			p.flush();
@@ -55,7 +55,7 @@ public class CharacterFileMain {
 				
 				//읽은데이터에서 ,를 기준으로 앞의 데이터만 출력
 				String[] ar = line.split(",");
-				System.out.println(ar[0]);
+				System.out.println(ar[2]);
 				
 			}
 			

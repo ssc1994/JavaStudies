@@ -16,8 +16,6 @@ public class Main {
 			Date date = new Date();
 			SimpleDateFormat sdf = new SimpleDateFormat("yyyy-MM-dd");
 			//UUID.randomUUID();
-			String filename = UUID.randomUUID().toString();
-			
 			
 			//기록할 파일 만들기
 			FileOutputStream fos = new FileOutputStream(

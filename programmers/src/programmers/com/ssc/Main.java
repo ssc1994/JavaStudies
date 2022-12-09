@@ -5,38 +5,42 @@ import java.util.*;
 public class Main {
 
 	public static void main(String[] args) {
-
-		String X = "100";
-		String Y = "123450";
-		String returnn = "";
-		int[] xCount  = new int[10];
-		int[] yCount  = new int[10];
-		StringBuffer a = new StringBuffer();
-		StringBuffer answer= new StringBuffer();//
-		int count = 0;
-
-		for( int i  = 0 ; i<X.length() ; i++) {
-			xCount[(X.charAt(i)-48)]++;
-		}
-		for( int i  = 0 ; i<Y.length() ; i++) {
-			yCount[(Y.charAt(i)-48)]++;
-		}
-		for(int i=9;i>=0;i--) {
-			String result="";
-			if(yCount[i]!=0&&xCount[i]!=0){
-				result+=i;
-				result=result.repeat(Math.min(xCount[i], yCount[i]));
-			}
-			answer.append(result);
-		}
 		
-		if(count == 0) {
-			returnn = "-1";
-		}else if (answer.charAt(0) == '0') {
-			returnn = "0";
-		}
+		Scanner scan = new Scanner(System.in);
+		System.out.print("바꿀 Auth_id : >"); 
+		int auth_id = scan.nextInt();
+		System.out.print("Name : >"); 
+		String name = scan.nextLine();
+		System.out.print("job : >"); 
+		String job = scan.next();
+		System.out.println(auth_id);
+		System.out.println(name);
+		System.out.println(job);
+		
+//		int n = 5;
+//		int[] arr1 = {9, 20, 28, 18, 11};
+//		int[] arr2  = {30, 1, 21, 17, 28};
+//		
+//		for( int i = 0 ; i < arr1.length ; i ++) {
+//			String a = Integer.toBinaryString(arr1[i]);
+//			System.out.println(a);
+//		}
+//		System.out.println();
+//		System.out.println();
+//		System.out.println();
+//		System.out.println();
+//		System.out.println();
+//		
+//		
+//		for( int i = 0 ; i< arr2.length ; i++) {
+//			String a = Integer.toBinaryString(arr2[i]);
+//			System.out.printf(String.format("%s",a));
+//			System.out.println();
+//		}
+		
 	}
 }
+	
 
 
 //
